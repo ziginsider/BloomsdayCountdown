@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="io.github.ziginsider.bloomsdaycountdown.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtLongString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:gravity="center_horizontal"
+        android:text="13 DAYS 12:22:22"
+        android:textColor="#F21212"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/txtDayRemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="13"
+        android:textColor="#F9AC08"
+        android:textSize="45sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="DAYS LEFT"
+        android:textColor="#F21212"
+        android:textSize="30sp"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txtLongString"
+        android:layout_toStartOf="@+id/txtLongString"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/anim_pumkin"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/txtLongString"
+        android:layout_alignRight="@+id/txtLongString"
+        android:layout_alignEnd="@+id/txtLongString"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
